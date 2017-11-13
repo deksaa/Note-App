@@ -1,10 +1,12 @@
 package example.destan.com.a011_mymemoapp;
 
 import android.app.Activity;
+import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -23,6 +25,21 @@ public class MainActivity extends Activity {
         MenuInflater menuInflater = getMenuInflater();
         menuInflater.inflate(R.menu.activity_main_action,menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.ACTIONBAR_BUTTON_INFO:
+                Toast.makeText(this,"This is the info message.",Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.ACTIONBAR_BUTTON_EXIT:
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
