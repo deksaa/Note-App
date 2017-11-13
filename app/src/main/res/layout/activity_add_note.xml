@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.destan.com.a011_mymemoapp.AddNoteActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textColor="#878787"/>
+
+    <EditText
+        android:id="@+id/ADDNOTEACTIVITY_EDITTEXT_TITLE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#494949"
+        android:hint="Enter any title..."/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:textColor="#878787"/>
+
+    <EditText
+        android:id="@+id/ADDNOTEACTIVITY_EDITTEXT_NOTE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#494949"
+        android:inputType="textMultiLine"
+        android:hint="Enter any notes...."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSaveButtonClicked"
+            android:layout_weight="1"
+            android:text="Save"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCancelButtonClicked"
+            android:layout_weight="1"
+            android:text="Cancel"/>
+
+    </LinearLayout>
+
+</LinearLayout>
