@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">My Memo</string>
+    <string name="app_main_label">My Memo App</string>
+    <string name="app_addnote_label">New Note</string>
+    <string name="app_listnotes_label">Notes</string>
 </resources>
